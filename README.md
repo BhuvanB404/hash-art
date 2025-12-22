@@ -25,6 +25,8 @@ The method is based on the following research paper:
 
 Prerequisites: a C compiler (gcc/clang) and standard build tools. A Makefile is provided but the simple compile line below works on any Unix-like system.
 
+First clone the repo. 
+
 Build (simple):
 
 ```bash
