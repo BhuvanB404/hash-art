@@ -20,3 +20,43 @@ The method is based on the following research paper:
 [Visualisation of Hashes using Random Art](https://www.dirk-loss.de/sshvis/drunken_bishop.pdf)
 
 ---
+
+## Installation & Usage
+
+Prerequisites: a C compiler (gcc/clang) and standard build tools. A Makefile is provided but the simple compile line below works on any Unix-like system.
+
+Build (simple):
+
+```bash
+cc -O2 -Wall -o hash hash.c -lm
+```
+
+Or try the Makefile
+
+```bash
+make
+```
+
+Run:
+
+```bash
+./hash
+# This generates `output.png` in the repository root
+```
+
+View the output image (Linux):
+
+```bash
+xdg-open output.png
+```
+
+Cleaning up:
+
+```bash
+rm -f hash output.png
+make clean  # if Makefile supports it
+```
+
+Notes:
+- If `make` fails because the Makefile references a different source file, use the `cc` command above to compile `hash.c` directly.
+- The program prints `Generated output.png` on success.
