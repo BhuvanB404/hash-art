@@ -52,13 +52,3 @@ View the output image (Linux):
 xdg-open output.png
 ```
 
-Cleaning up:
-
-```bash
-rm -f hash output.png
-make clean  # if Makefile supports it
-```
-
-Notes:
-- If `make` fails because the Makefile references a different source file, use the `cc` command above to compile `hash.c` directly.
-- The program prints `Generated output.png` on success.
